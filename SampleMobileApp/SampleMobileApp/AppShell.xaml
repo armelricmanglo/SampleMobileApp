@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:SampleMobileApp.Views"
+       x:Class="SampleMobileApp.AppShell">
+    <!-- Display a bottom tab bar containing two tabs -->
+    <TabBar>
+        <ShellContent Title="My Profile" Icon="icon_feed.png" ContentTemplate="{DataTemplate views:ProfilePage}" />
+        <ShellContent Title="My Subjects" Icon="icon_about.png" ContentTemplate="{DataTemplate views:SubjectPage}" />
+        <ShellContent Title="My To Do List" Icon="icon_about.png" ContentTemplate="{DataTemplate views:TDLPage}" />
+    </TabBar>
+</Shell>

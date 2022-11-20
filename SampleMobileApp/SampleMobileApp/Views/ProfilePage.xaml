@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMobileApp.Views.ProfilePage"
+             Title="My Profile">
+    <!-- Layout children in two rows -->
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Layout children vertically -->
+        <StackLayout Grid.Row="1" Margin="20" Spacing="10">
+            <Image Source="THE_PLAZA_WITH_ME.jpg" HeightRequest="200"/>
+
+            <Label Text="Name:" />
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Armel Ric B. Manglo" FontAttributes="Bold" FontSize="22" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="Student Number:" />
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="17-1072-668" FontAttributes="Bold" FontSize="22" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="Course:" />
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="BSCpE" FontAttributes="Bold" FontSize="22" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="My FB Account" Clicked="OnButtonClicked" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
